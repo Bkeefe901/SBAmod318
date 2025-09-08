@@ -36,6 +36,9 @@ app.set("view engine", "cycle");
 
 
 // Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 
 

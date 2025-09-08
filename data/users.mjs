@@ -15,7 +15,7 @@ export const users = [
     id: 2,
     userName: "BrokeSinner",
     bikeId: '',
-    componentId: ''
+    componentId: []
 }
 
 
