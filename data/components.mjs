@@ -15,24 +15,24 @@ export const components = [
 },
 {
     id: 2,
-    type: "Head set",
-    brand: "Chris King",
-    desc: "A well crafted head set, made from titanium",
-    price: 200
+    type: "Crankset",
+    brand: "SRAM",
+    desc: "SRAM S300 1.1 GXP Track crankset",
+    price: 129
 },
 {
     id: 3,
-    type: "Head set",
-    brand: "Chris King",
-    desc: "A well crafted head set, made from titanium",
-    price: 200
+    type: "Handle Bars",
+    brand: "Surly",
+    desc: "Sunrise Handlebars (bmx style handlebars)",
+    price: 78
 },
 {
     id: 4,
-    type: "Head set",
-    brand: "Chris King",
-    desc: "A well crafted head set, made from titanium",
-    price: 200
+    type: "Saddle",
+    brand: "Brooks",
+    desc: "Brooks C17 Special",
+    price: 119.99
 },
 
 
