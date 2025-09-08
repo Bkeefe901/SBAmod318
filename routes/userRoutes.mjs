@@ -5,6 +5,13 @@ import { users } from '../data/users.mjs';
 
 const router = express.Router();
 
+// routes
+
+router.route("/")
+    .get((req, res)=>{
+        res.json(users);
+    })
+
 
 
 
