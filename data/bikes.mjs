@@ -1,7 +1,7 @@
 export const bikes = [
 {
-    Id: 0,
-    manufacturer: "Bianchi",
+    id: 0,
+    brand: "Bianchi",
     model: "Veloce",
     year: 1997,
     frame_material: "Chromoly Steel",
@@ -9,8 +9,8 @@ export const bikes = [
     frame_size: "56cm"
 },
 {
-    Id: 1,
-    manufacturer: "Bridgestone",
+    id: 1,
+    brand: "Bridgestone",
     model: "Mb-0",
     year: 1991,
     frame_material: "Chromoly Steel",
