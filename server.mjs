@@ -30,7 +30,7 @@ app.engine('cycle', (filePath, options, callback)=>{
 });
 
 // Directory for templates:
-app.set("views", "./views");
+app.set("views", "./views");  //  ./views
 // Register template engine
 app.set("view engine", "cycle");
 

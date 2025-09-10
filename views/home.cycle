@@ -12,15 +12,15 @@
         <form action="/bikes" method="POST">
             <label>
                 Brand
-                <input type="text" placeholder="Ex: Specialized" />
+                <input type="text" name="Brand" placeholder="Ex: Specialized" />
             </label>
             <label>
                 Model
-                <input type="text" placeholder="Ex: Rock Hopper" />
+                <input type="text" name="Model" placeholder="Ex: Rock Hopper" />
             </label>
             <label>
                 Year
-                <input type="text" placeholder="Ex: 1994" />
+                <input type="text" name="Year" placeholder="Ex: 1994" />
             </label>
             <button type="submit">Submit</button>
             
