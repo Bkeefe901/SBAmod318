@@ -4,6 +4,7 @@ import userRoutes from './routes/userRoutes.mjs';
 import bikeRoutes from './routes/bikeRoutes.mjs';
 import componentRoutes from './routes/componentRoutes.mjs';
 import fs from 'fs';
+import { errorHandler } from './middleware/errorHandling.mjs';
 
 
 
@@ -59,9 +60,7 @@ app.get("/home", (req, res)=>{
 
 
 // Global Error Handling Middleware
-app.use(function(err, req, res, next){
-    res.status(err.status || 500).json({msg: `🖐️ STOP! you have an Error: ${err.message}`});
-});
+app.use(errorHandler);
 
 
 
