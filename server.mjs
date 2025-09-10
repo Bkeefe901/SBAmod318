@@ -52,7 +52,7 @@ app.use('/components', componentRoutes);
 app.get("/home", (req, res)=>{
     let option = {
         heading: "Welcome to The Bike User API!!",
-        content: "Fill out info to add yourself as a user to the Users Database"
+        content: "Fill out info to add your bike to the bike database"
     }
 
     res.render("home", option);

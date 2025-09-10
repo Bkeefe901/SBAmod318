@@ -8,10 +8,12 @@ For my project I am doing a server that stores 3 different data categories (user
 
 | Method | Path | Description |
 | --- | --- | --- |
-| GET | "/" | filler |
-| GET | "/users" | filler |
-| GET | "/bikes" | filler |
-| GET | "/components" | filler |
+| GET | "/users" | Returns array of all users |
+| GET | "/users/:id" | Returns user with the id indicated in the parameter |
+| GET | "/bikes" | Returns array of all bikes |
+| GET | "/bikes/:id" | Returns bike with the id indicated in the parameter |
+| GET | "/bikes?brand=<brandname>" | Returns all bikes of the brand specified from the query brand |
+| GET | "/components" | Returns array of all components |
 
 
 
