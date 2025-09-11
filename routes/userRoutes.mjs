@@ -37,6 +37,9 @@ router.route("/")
     })
 
 router.route("/:id")
+    // @route PATCH /users
+    // @desc  patch any elements of a user by id
+    // @access Public
     .patch((req, res, next)=> {
         const id = req.params.id;
         const data = req.body;
@@ -55,6 +58,9 @@ router.route("/:id")
         } else next();
         
     })
+    // @route DELETE /users
+    // @desc  Delete user by id
+    // @access Public
     .delete((req, res, next)=> {
         const id = req.params.id;
 

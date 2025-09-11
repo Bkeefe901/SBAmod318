@@ -5,6 +5,7 @@ import bikeRoutes from './routes/bikeRoutes.mjs';
 import componentRoutes from './routes/componentRoutes.mjs';
 import fs from 'fs';
 import { errorHandler } from './middleware/errorHandling.mjs';
+import log from './middleware/loggingMiddleware.mjs';
 
 
 
@@ -30,7 +31,7 @@ app.engine('cycle', (filePath, options, callback)=>{
 });
 
 // Directory for templates:
-app.set("views", "./views");  //  ./views
+app.set("views", "./views");  
 // Register template engine
 app.set("view engine", "cycle");
 
@@ -39,6 +40,7 @@ app.set("view engine", "cycle");
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(log);
 
 app.use(express.static('css')); 
 
@@ -49,6 +51,8 @@ app.use(express.static('css'));
 app.use('/users', userRoutes);
 app.use('/bikes', bikeRoutes);
 app.use('/components', componentRoutes);
+
+
 app.get("/home", (req, res)=>{
     let option = {
         heading: "Welcome to The Bike User API!!",

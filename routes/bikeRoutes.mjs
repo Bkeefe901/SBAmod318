@@ -21,13 +21,17 @@ router.route("/")
             const bikeList = bikes.filter((bike) => bike.brand.toLowerCase() == brand.toLowerCase())
             res.json(bikeList);
             // Show All Bikes 
-            // @route GET /bikes/
+            // @route GET /bikes
             // @desc Show All Bikes
             // @access Public
         } else res.json(bikes);
 
 
     })
+    // Create a mew bike obj for bikes data
+    // @route Post /bikes
+    // @desc Post a new bike to the bikes data
+    // @access Public
     .post((req, res) => {
         const Brand = req.body.Brand;
         const Model = req.body.Model;
@@ -47,6 +51,10 @@ router.route("/")
 
 
 router.route("/:id")
+    // Get a bike by id
+    // @route GET /bikes/:id
+    // @desc get a bike by id
+    // @access Public
     .get((req, res, next) => {
         const id = req.params.id;
         const aBike = bikes.find((bike) => bike.id == id);
