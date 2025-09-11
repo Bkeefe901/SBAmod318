@@ -21,3 +21,6 @@ For my project I am doing a server that stores 3 different data categories (user
 | GET | "/components/:id" | Return the component matching the id parameter |
 
 
+## Built With
+- ![Node](images/Node.png)
+- ![Express](images/Express.png)
