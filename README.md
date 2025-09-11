@@ -24,3 +24,8 @@ For my project I am doing a server that stores 3 different data categories (user
 ## Built With
 - ![Node](images/Node.png)
 - ![Express](images/Express.png)
+
+## Contact
+- Name: Brady Keefe
+- Email: bradyjokeefe@gmail.com
+- LinkedIn: linkedin.com/in/brady-keefe901
