@@ -33,17 +33,23 @@ router.route("/")
     // @desc Post a new bike to the bikes data
     // @access Public
     .post((req, res) => {
-        const Brand = req.body.Brand;
-        const Model = req.body.Model;
-        const Year = req.body.Year;
+        let { Brand, Model, Year, FrameMaterial, BrakeType, FrameSize } = req.body;
+        // const Brand = req.body.Brand;
+        // const Model = req.body.Model;
+        // const Year = req.body.Year;
+        // const FrameMaterial = req
         const Id = bikes.length;
 
         const bike = {
             id: Id,
             brand: Brand,
             model: Model,
-            year: Year
+            year: Year,
+            frame_material: FrameMaterial,
+            brake_type: BrakeType,
+            frame_size: FrameSize,
         };
+       
         bikes.push(bike);
         res.json(bikes);
 

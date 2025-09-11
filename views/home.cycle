@@ -6,8 +6,9 @@
    <link rel="stylesheet" href="styles.css"> 
   </head>
   <body>
+    <h1>#title#</h1>
     <div>
-        <h1>#title#</h1>
+        
         <p>#content#</p>
         <form action="/bikes" method="POST">
             <label>
@@ -21,6 +22,18 @@
             <label>
                 Year
                 <input type="text" name="Year" placeholder="Ex: 1994" />
+            </label>
+            <label>
+                Frame Material
+                <input type="text" name="FrameMaterial" placeholder="Ex: Steel" />
+            </label>
+            <label>
+                Brake Type
+                <input type="text" name="BrakeType" placeholder="Ex: Rim" />
+            </label>
+            <label>
+                Frame Size
+                <input type="text" name="FrameSize" placeholder="Ex: 56cm" />
             </label>
             <button type="submit">Submit</button>
             
